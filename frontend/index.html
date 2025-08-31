@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SalesForge AI - Premium LinkedIn Automation</title>
+    <title>SalesForge AI - LinkedIn Sales Automation</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,121 +11,138 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
     <!-- Toast Container -->
     <div id="toastContainer" class="toast-container"></div>
     
     <!-- Loading Overlay -->
     <div id="loadingOverlay" class="loading-overlay hidden">
-        <div class="loading-spinner"></div>
-        <p>Processing...</p>
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+        </div>
+        <div class="loading-text">Processing...</div>
     </div>
 
-    <!-- Landing Page -->
+    <!-- BEAUTIFUL LANDING PAGE -->
     <div id="landingPage" class="landing-page">
-        <!-- Navigation -->
-        <nav class="landing-nav">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <span class="logo-icon">⚡</span>
-                    SalesForge AI
+        <div class="landing-container">
+            <!-- Navigation -->
+            <nav class="landing-nav">
+                <div class="logo">
+                    <h2>⚡ SalesForge AI</h2>
                 </div>
-                <div class="nav-actions">
-                    <button id="loginBtn" class="btn btn-ghost">Sign In</button>
-                    <button id="signupBtn" class="btn btn-primary">Get Started</button>
+                <div class="auth-buttons">
+                    <button id="loginBtn" class="btn-ghost">Sign In</button>
+                    <button id="signupBtn" class="btn-primary">Get Started</button>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <span class="badge-icon">🤖</span>
-                        AI-Powered Sales Automation
-                    </div>
-                    <h1 class="hero-title">
-                        Supercharge Your LinkedIn<br>
-                        Sales Outreach
-                    </h1>
-                    <p class="hero-description">
-                        AI-powered automation that personalizes messages, tracks engagement, and converts prospects into customers with premium dark aesthetics.
-                    </p>
-                    <div class="hero-actions">
-                        <button id="heroGetStarted" class="btn btn-primary btn-lg">
-                            <span class="btn-icon">🚀</span>
-                            Start Free Trial
-                        </button>
-                        <button id="heroDemo" class="btn btn-secondary btn-lg">
-                            <span class="btn-icon">▶</span>
-                            Watch Demo
-                        </button>
-                    </div>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-badge">
+                    <span class="badge-icon">🤖</span>
+                    AI-Powered LinkedIn Sales Automation
+                </div>
+                <h1 class="hero-title">
+                    Supercharge Your <span class="gradient-text">LinkedIn</span><br>
+                    Sales Outreach
+                </h1>
+                <p class="hero-subtitle">
+                    AI-powered automation that identifies prospects, analyzes profiles, and sends hyper-personalized messages that get responses.
+                </p>
+                <div class="hero-actions">
+                    <button id="heroGetStarted" class="btn-primary">
+                        <span class="btn-icon">🚀</span>
+                        Start Free Trial
+                    </button>
+                    <button id="heroDemo" class="btn-neon">
+                        <span class="btn-icon">▶</span>
+                        Watch Demo
+                    </button>
                 </div>
                 
-                <!-- Stats -->
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-value">47%</div>
-                        <div class="stat-label">Higher Response Rate</div>
+                <!-- Stats Preview -->
+                <div class="stats-preview">
+                    <div class="stat-item">
+                        <span class="stat-number">47%</span>
+                        <span class="stat-label">Higher Response Rate</span>
                     </div>
-                    <div class="stat">
-                        <div class="stat-value">10x</div>
-                        <div class="stat-label">Faster Outreach</div>
+                    <div class="stat-item">
+                        <span class="stat-number">10x</span>
+                        <span class="stat-label">Faster Prospecting</span>
                     </div>
-                    <div class="stat">
-                        <div class="stat-value">300+</div>
-                        <div class="stat-label">Happy Customers</div>
+                    <div class="stat-item">
+                        <span class="stat-number">300+</span>
+                        <span class="stat-label">Happy Customers</span>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Features Section -->
-        <section class="features">
-            <div class="container">
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🤖</div>
-                        <h3>AI Message Generation</h3>
-                        <p>Create personalized messages that convert with advanced AI technology</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <h3>Real-time Analytics</h3>
-                        <p>Track performance with beautiful dark-themed charts and insights</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Smart Automation</h3>
-                        <p>Automate your entire outreach workflow with intelligent targeting</p>
-                    </div>
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Smart Prospecting</h3>
+                    <p>Find ideal prospects using AI-powered filtering based on job roles, industry, and company size</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Profile Analysis</h3>
+                    <p>Extract insights from LinkedIn profiles using advanced NLP to understand prospects better</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>Hyper-Personalized Messages</h3>
+                    <p>Generate tailored connection and follow-up messages that feel genuinely personal</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Automated Sequences</h3>
+                    <p>Schedule outreach sequences with human-like delays without losing personalization</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Response Dashboard</h3>
+                    <p>Track connection rates, replies, and campaign ROI with beautiful analytics</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Context Engineering</h3>
+                    <p>Understand user goals and prospect criteria for maximum relevance</p>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 
     <!-- Auth Modal -->
     <div id="authModal" class="modal hidden">
         <div class="modal-backdrop" onclick="closeAuthModal()"></div>
-        <div class="modal-content">
+        <div class="modal-content auth-modal">
             <button id="closeAuthModal" class="modal-close">&times;</button>
             
             <!-- Login Form -->
             <div id="loginForm" class="auth-form">
                 <h2>Welcome Back</h2>
-                <p>Sign in to your SalesForge account</p>
+                <p class="auth-subtitle">Sign in to your SalesForge AI account</p>
                 
                 <form>
                     <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" name="email" value="demo@salesforge.ai" required>
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" value="demo@salesforge.ai" class="form-input" required>
                     </div>
                     <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" name="password" value="password123" required>
+                        <label class="form-label">Password</label>
+                        <input type="password" name="password" value="password123" class="form-input" required>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+                    <button type="submit" class="btn-primary btn-full">Sign In</button>
                 </form>
                 
                 <p class="auth-switch">Don't have an account? <a href="#" id="switchToSignup">Sign up</a></p>
@@ -134,22 +151,22 @@
             <!-- Signup Form -->
             <div id="signupForm" class="auth-form hidden">
                 <h2>Get Started</h2>
-                <p>Create your premium account</p>
+                <p class="auth-subtitle">Create your premium account</p>
                 
                 <form>
                     <div class="form-group">
-                        <label>Name</label>
-                        <input type="text" name="name" required>
+                        <label class="form-label">Name</label>
+                        <input type="text" name="name" class="form-input" required>
                     </div>
                     <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" name="email" required>
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-input" required>
                     </div>
                     <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" name="password" required>
+                        <label class="form-label">Password</label>
+                        <input type="password" name="password" class="form-input" required>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+                    <button type="submit" class="btn-primary btn-full">Create Account</button>
                 </form>
                 
                 <p class="auth-switch">Already have an account? <a href="#" id="switchToLogin">Sign in</a></p>
@@ -162,32 +179,38 @@
         <!-- Sidebar -->
         <aside id="sidebar" class="sidebar">
             <div class="sidebar-header">
-                <div class="logo">
-                    <span class="logo-icon">⚡</span>
-                    <span class="logo-text">SalesForge AI</span>
+                <h3>⚡ SalesForge AI</h3>
+                <div class="sidebar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
             
             <nav class="sidebar-nav">
                 <a href="#" class="nav-item active" data-page="dashboard">
                     <span class="nav-icon">📊</span>
-                    <span class="nav-text">Dashboard</span>
+                    <span class="nav-label">Dashboard</span>
                 </a>
                 <a href="#" class="nav-item" data-page="campaigns">
                     <span class="nav-icon">🎯</span>
-                    <span class="nav-text">Campaigns</span>
+                    <span class="nav-label">Campaigns</span>
                 </a>
                 <a href="#" class="nav-item" data-page="prospects">
                     <span class="nav-icon">👥</span>
-                    <span class="nav-text">Prospects</span>
+                    <span class="nav-label">Prospects</span>
                 </a>
                 <a href="#" class="nav-item" data-page="messages">
                     <span class="nav-icon">💬</span>
-                    <span class="nav-text">Messages</span>
+                    <span class="nav-label">Messages</span>
                 </a>
                 <a href="#" class="nav-item" data-page="analytics">
                     <span class="nav-icon">📈</span>
-                    <span class="nav-text">Analytics</span>
+                    <span class="nav-label">Analytics</span>
+                </a>
+                <a href="#" class="nav-item" data-page="sequences">
+                    <span class="nav-icon">🔄</span>
+                    <span class="nav-label">Sequences</span>
                 </a>
             </nav>
             
@@ -199,7 +222,7 @@
                         <div class="user-plan">Pro Plan</div>
                     </div>
                 </div>
-                <button id="logoutBtn" class="btn btn-ghost btn-sm">Logout</button>
+                <button id="logoutBtn" class="btn-ghost btn-small">Logout</button>
             </div>
         </aside>
 
@@ -209,51 +232,77 @@
             <div id="dashboardContent" class="content-page">
                 <div class="page-header">
                     <h1>Dashboard</h1>
-                    <button id="createCampaignBtn" class="btn btn-primary">
-                        <span class="btn-icon">+</span>
-                        New Campaign
-                    </button>
+                    <div class="header-actions">
+                        <button id="createCampaignBtn" class="btn-primary">
+                            <span class="btn-icon">+</span>
+                            New Campaign
+                        </button>
+                        <button id="bulkProspectBtn" class="btn-glass">
+                            <span class="btn-icon">📥</span>
+                            Import Prospects
+                        </button>
+                    </div>
                 </div>
 
-                <!-- Stats Cards -->
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-icon">🎯</div>
-                        <div class="stat-content">
+                <!-- Dashboard Grid -->
+                <div class="dashboard-grid">
+                    <!-- Key Stats -->
+                    <div class="widget-card">
+                        <div class="widget-header">
                             <h3>Active Campaigns</h3>
-                            <div class="stat-value" id="totalCampaigns">3</div>
+                            <span class="nav-icon">🎯</span>
                         </div>
+                        <div class="widget-value" id="totalCampaigns">3</div>
+                        <div class="trend-indicator up">+2 this week</div>
                     </div>
                     
-                    <div class="stat-card">
-                        <div class="stat-icon">👥</div>
-                        <div class="stat-content">
+                    <div class="widget-card">
+                        <div class="widget-header">
                             <h3>Total Prospects</h3>
-                            <div class="stat-value" id="totalProspects">91</div>
+                            <span class="nav-icon">👥</span>
                         </div>
+                        <div class="widget-value" id="totalProspects">147</div>
+                        <div class="trend-indicator up">+23 this week</div>
                     </div>
                     
-                    <div class="stat-card">
-                        <div class="stat-icon">💬</div>
-                        <div class="stat-content">
+                    <div class="widget-card">
+                        <div class="widget-header">
                             <h3>Response Rate</h3>
-                            <div class="stat-value" id="responseRate">33.3%</div>
-                            <div class="stat-change">+12% this week</div>
+                            <span class="nav-icon">💬</span>
                         </div>
-                        <div class="progress-ring">
-                            <svg class="progress-ring-svg" width="60" height="60">
-                                <circle class="progress-ring-bg" cx="30" cy="30" r="25"></circle>
-                                <circle class="progress-ring-progress" cx="30" cy="30" r="25"></circle>
-                            </svg>
+                        <div class="widget-value" id="responseRate">34.2%</div>
+                        <div class="trend-indicator up">+5.8% this week</div>
+                    </div>
+
+                    <div class="widget-card">
+                        <div class="widget-header">
+                            <h3>Messages Sent</h3>
+                            <span class="nav-icon">📤</span>
+                        </div>
+                        <div class="widget-value" id="messagesSent">89</div>
+                        <div class="trend-indicator">Today</div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="widget-card widget-full">
+                        <div class="widget-header">
+                            <h3>Recent Campaigns</h3>
+                            <button class="btn-ghost btn-small" onclick="showPage('campaigns')">View All</button>
+                        </div>
+                        <div id="campaignsList" class="campaign-list">
+                            <!-- Campaign items will be loaded here -->
                         </div>
                     </div>
-                </div>
 
-                <!-- Recent Campaigns -->
-                <div class="dashboard-section">
-                    <h2>Recent Campaigns</h2>
-                    <div id="campaignsList" class="campaigns-list">
-                        <!-- Campaign cards will be loaded here -->
+                    <!-- Top Prospects -->
+                    <div class="widget-card widget-full">
+                        <div class="widget-header">
+                            <h3>High-Priority Prospects</h3>
+                            <button class="btn-ghost btn-small" onclick="showPage('prospects')">View All</button>
+                        </div>
+                        <div id="topProspectsList" class="prospects-preview">
+                            <!-- Top prospects will be loaded here -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -262,10 +311,16 @@
             <div id="campaignsContent" class="content-page hidden">
                 <div class="page-header">
                     <h1>Campaigns</h1>
-                    <button id="newCampaignBtn" class="btn btn-primary">
-                        <span class="btn-icon">+</span>
-                        New Campaign
-                    </button>
+                    <div class="header-actions">
+                        <button id="newCampaignBtn" class="btn-primary">
+                            <span class="btn-icon">+</span>
+                            New Campaign
+                        </button>
+                        <button class="btn-glass">
+                            <span class="btn-icon">📊</span>
+                            Campaign Report
+                        </button>
+                    </div>
                 </div>
                 
                 <div id="campaignsGrid" class="campaigns-grid">
@@ -277,19 +332,26 @@
             <div id="prospectsContent" class="content-page hidden">
                 <div class="page-header">
                     <h1>Prospects</h1>
-                    <div class="page-actions">
-                        <input type="search" id="prospectSearch" placeholder="Search prospects..." class="search-input">
-                        <div id="filterTags" class="filter-tags">
+                    <div class="prospects-controls">
+                        <div class="search-box">
+                            <input type="search" id="prospectSearch" placeholder="Search prospects..." class="search-input">
+                        </div>
+                        <div class="filter-tags">
                             <span class="tag active" data-filter="all">All</span>
                             <span class="tag" data-filter="pending">Pending</span>
                             <span class="tag" data-filter="contacted">Contacted</span>
                             <span class="tag" data-filter="responded">Responded</span>
+                            <span class="tag" data-filter="high">High Priority</span>
                         </div>
+                        <button id="analyzeProspectsBtn" class="btn-primary">
+                            <span class="btn-icon">🧠</span>
+                            Analyze All
+                        </button>
                     </div>
                 </div>
                 
                 <div id="prospectsTable" class="prospects-table">
-                    <!-- Prospect cards will be loaded here -->
+                    <!-- Prospect rows will be loaded here -->
                 </div>
             </div>
 
@@ -297,34 +359,49 @@
             <div id="messagesContent" class="content-page hidden">
                 <div class="page-header">
                     <h1>Messages</h1>
-                    <button class="btn btn-primary">
-                        <span class="btn-icon">✉</span>
-                        New Message
-                    </button>
+                    <div class="header-actions">
+                        <button id="newBulkMessageBtn" class="btn-primary">
+                            <span class="btn-icon">📢</span>
+                            Bulk Message
+                        </button>
+                        <button class="btn-glass">
+                            <span class="btn-icon">📊</span>
+                            Message Analytics
+                        </button>
+                    </div>
                 </div>
                 
-                <div class="messages-container">
-                    <div class="conversations-sidebar">
-                        <h3>Conversations</h3>
-                        <div id="conversationList" class="conversation-list">
-                            <div class="empty-state">
-                                <h3>Select a conversation</h3>
-                                <p>Choose a prospect to start messaging</p>
+                <div class="message-interface">
+                    <div class="message-sidebar">
+                        <div class="conversation-search">
+                            <input type="search" placeholder="Search conversations..." class="search-input">
+                        </div>
+                        <div class="conversation-list">
+                            <h3>Recent Conversations</h3>
+                            <div id="conversationList">
+                                <!-- Conversations will be loaded here -->
                             </div>
                         </div>
                     </div>
                     
-                    <div class="chat-container">
-                        <div id="chatContainer" class="chat-area">
-                            <div class="empty-state">
+                    <div class="message-main">
+                        <div id="chatContainer" class="chat-container">
+                            <div class="chat-placeholder">
                                 <h3>Select a conversation</h3>
-                                <p>Choose a prospect to start messaging</p>
+                                <p>Choose a prospect to view messages and send replies</p>
                             </div>
                         </div>
-                        
-                        <div class="message-input">
-                            <input type="text" placeholder="Type your message...">
-                            <button class="btn btn-primary">Send</button>
+                        <div class="message-input-area hidden">
+                            <div class="message-compose">
+                                <textarea placeholder="Type your message..." class="message-input" rows="3"></textarea>
+                                <div class="message-actions">
+                                    <button class="btn-glass btn-small">
+                                        <span class="btn-icon">🤖</span>
+                                        AI Suggest
+                                    </button>
+                                    <button class="btn-primary btn-small">Send</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -334,141 +411,441 @@
             <div id="analyticsContent" class="content-page hidden">
                 <div class="page-header">
                     <h1>Analytics</h1>
+                    <div class="header-actions">
+                        <select class="form-select">
+                            <option>Last 30 days</option>
+                            <option>Last 7 days</option>
+                            <option>This month</option>
+                            <option>Custom</option>
+                        </select>
+                        <button class="btn-glass">
+                            <span class="btn-icon">📥</span>
+                            Export Report
+                        </button>
+                    </div>
                 </div>
                 
                 <div class="analytics-grid">
-                    <div class="chart-container">
+                    <div class="chart-card">
                         <h3>Performance Overview</h3>
-                        <canvas id="performanceChart"></canvas>
+                        <div class="chart-container">
+                            <canvas id="performanceChart"></canvas>
+                        </div>
                     </div>
                     
-                    <div class="chart-container">
+                    <div class="chart-card">
                         <h3>Response Rates</h3>
-                        <canvas id="responseChart"></canvas>
+                        <div class="chart-container">
+                            <canvas id="responseChart"></canvas>
+                        </div>
                     </div>
+
+                    <div class="chart-card">
+                        <h3>Campaign Performance</h3>
+                        <div id="campaignPerformanceTable" class="table-container">
+                            <!-- Performance table will be loaded here -->
+                        </div>
+                    </div>
+
+                    <div class="chart-card">
+                        <h3>Prospect Sources</h3>
+                        <div class="chart-container">
+                            <canvas id="sourceChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sequences Content -->
+            <div id="sequencesContent" class="content-page hidden">
+                <div class="page-header">
+                    <h1>Automated Sequences</h1>
+                    <div class="header-actions">
+                        <button id="newSequenceBtn" class="btn-primary">
+                            <span class="btn-icon">+</span>
+                            New Sequence
+                        </button>
+                    </div>
+                </div>
+                
+                <div id="sequencesGrid" class="sequences-grid">
+                    <!-- Sequence cards will be loaded here -->
                 </div>
             </div>
         </main>
     </div>
 
-    <!-- Campaign Creation Wizard Modal -->
+    <!-- Campaign Creation Wizard Modal (Enhanced) -->
     <div id="campaignWizardModal" class="modal hidden">
         <div class="modal-backdrop" onclick="closeCampaignWizard()"></div>
-        <div class="modal-content modal-wide">
+        <div class="modal-content wizard-modal">
             <button id="closeCampaignWizard" class="modal-close">&times;</button>
             
             <div class="wizard-header">
                 <h2>Create New Campaign</h2>
-                <div class="progress-indicator">
-                    <div class="progress-step active">1</div>
-                    <div class="progress-step">2</div>
-                    <div class="progress-step">3</div>
+                <p>Build your AI-powered LinkedIn outreach campaign</p>
+                <div class="wizard-progress">
+                    <div class="progress-step active" data-step="1">1</div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="2">2</div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="3">3</div>
+                    <div class="progress-line"></div>
+                    <div class="progress-step" data-step="4">4</div>
                 </div>
             </div>
 
-            <form class="campaign-wizard">
-                <!-- Step 1: Campaign Targeting -->
-                <div class="wizard-step active">
-                    <h3>Campaign Targeting</h3>
+            <div class="wizard-content">
+                <!-- Step 1: Basic Campaign Info -->
+                <div class="wizard-step active" data-step="1">
+                    <h3>Campaign Details</h3>
                     
-                    <div class="form-group">
-                        <label>Campaign Name</label>
-                        <input type="text" name="campaignName" placeholder="Enter campaign name" required>
-                    </div>
-                    
-                    <div class="form-row">
+                    <div class="wizard-form">
                         <div class="form-group">
-                            <label>Industry</label>
-                            <select name="industry" required>
-                                <option value="">Select Industry</option>
-                            </select>
+                            <label class="form-label">Campaign Name</label>
+                            <input type="text" name="campaignName" placeholder="e.g., SaaS CTO Outreach Q4" class="form-input" required>
                         </div>
+                        
                         <div class="form-group">
-                            <label>Company Size</label>
-                            <select name="companySize" required>
-                                <option value="">Select Size</option>
-                            </select>
+                            <label class="form-label">Product/Service</label>
+                            <textarea name="productService" rows="3" placeholder="What are you offering? Be specific..." class="form-textarea" required></textarea>
                         </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Target Roles</label>
-                        <div id="roleSelector" class="tag-selector">
-                            <!-- Role options will be populated here -->
+
+                        <div class="form-group">
+                            <label class="form-label">Outreach Goal</label>
+                            <div class="goal-selector">
+                                <div class="goal-option" data-value="demo">
+                                    <div class="goal-icon">🎯</div>
+                                    <div class="goal-text">Book Demo</div>
+                                </div>
+                                <div class="goal-option" data-value="call">
+                                    <div class="goal-icon">📞</div>
+                                    <div class="goal-text">Schedule Call</div>
+                                </div>
+                                <div class="goal-option" data-value="hire">
+                                    <div class="goal-icon">👥</div>
+                                    <div class="goal-text">Hiring</div>
+                                </div>
+                                <div class="goal-option" data-value="partnership">
+                                    <div class="goal-icon">🤝</div>
+                                    <div class="goal-text">Partnership</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Step 2: Message Configuration -->
-                <div class="wizard-step">
-                    <h3>Message Configuration</h3>
+                <!-- Step 2: Target Audience (ICP Definition) -->
+                <div class="wizard-step" data-step="2">
+                    <h3>Target Audience (ICP)</h3>
                     
-                    <div class="form-group">
-                        <label>Brand Voice</label>
-                        <div class="voice-selector">
-                            <!-- Voice options will be populated here -->
+                    <div class="wizard-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Target Industry</label>
+                                <select name="industry" class="form-select" required>
+                                    <option value="">Select Industry</option>
+                                    <option value="SaaS">SaaS</option>
+                                    <option value="EdTech">EdTech</option>
+                                    <option value="FinTech">FinTech</option>
+                                    <option value="Healthcare">Healthcare</option>
+                                    <option value="E-commerce">E-commerce</option>
+                                    <option value="Manufacturing">Manufacturing</option>
+                                    <option value="Consulting">Consulting</option>
+                                    <option value="Real Estate">Real Estate</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Company Size</label>
+                                <select name="companySize" class="form-select" required>
+                                    <option value="">Select Size</option>
+                                    <option value="Startup">Startup (1-50)</option>
+                                    <option value="SME">SME (50-200)</option>
+                                    <option value="Enterprise">Enterprise (200+)</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Product/Service Description</label>
-                        <textarea name="productService" rows="4" placeholder="Describe your product or service..." required></textarea>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Ideal Job Roles</label>
+                            <div id="roleSelector" class="tag-selector multi-select">
+                                <div class="role-option" data-value="CEO">CEO</div>
+                                <div class="role-option" data-value="CTO">CTO</div>
+                                <div class="role-option" data-value="VP Engineering">VP Engineering</div>
+                                <div class="role-option" data-value="Head of Product">Head of Product</div>
+                                <div class="role-option" data-value="Head of HR">Head of HR</div>
+                                <div class="role-option" data-value="Growth Manager">Growth Manager</div>
+                                <div class="role-option" data-value="Sales Director">Sales Director</div>
+                                <div class="role-option" data-value="Marketing Head">Marketing Head</div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Region/Location</label>
+                                <select name="region" class="form-select" required>
+                                    <option value="">Select Region</option>
+                                    <option value="India">India</option>
+                                    <option value="US">United States</option>
+                                    <option value="Europe">Europe</option>
+                                    <option value="Global">Global</option>
+                                    <option value="APAC">Asia Pacific</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Step 3: Campaign Goals -->
-                <div class="wizard-step">
-                    <h3>Campaign Goals</h3>
+                <!-- Step 3: Message Configuration -->
+                <div class="wizard-step" data-step="3">
+                    <h3>Message Settings</h3>
                     
-                    <div class="form-group">
-                        <label>Outreach Goals</label>
-                        <div class="goal-selector">
-                            <!-- Goal options will be populated here -->
+                    <div class="wizard-form">
+                        <div class="form-group">
+                            <label class="form-label">Brand Voice</label>
+                            <div class="voice-selector">
+                                <div class="voice-option" data-value="formal">
+                                    <h4>Formal</h4>
+                                    <p>Professional and structured</p>
+                                </div>
+                                <div class="voice-option" data-value="friendly">
+                                    <h4>Friendly</h4>
+                                    <p>Warm and approachable</p>
+                                </div>
+                                <div class="voice-option" data-value="enthusiastic">
+                                    <h4>Enthusiastic</h4>
+                                    <p>Energetic and exciting</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Optional Triggers</label>
+                            <div class="trigger-selector">
+                                <div class="trigger-option" data-value="job_change">
+                                    <span class="trigger-icon">🔄</span>
+                                    <span>Job Changes</span>
+                                </div>
+                                <div class="trigger-option" data-value="hiring_post">
+                                    <span class="trigger-icon">📝</span>
+                                    <span>Hiring Posts</span>
+                                </div>
+                                <div class="trigger-option" data-value="funding">
+                                    <span class="trigger-icon">💰</span>
+                                    <span>New Funding</span>
+                                </div>
+                                <div class="trigger-option" data-value="company_news">
+                                    <span class="trigger-icon">📰</span>
+                                    <span>Company News</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </form>
 
-            <div class="wizard-footer">
-                <button id="wizardBack" class="btn btn-secondary" style="display: none;">Back</button>
-                <button id="wizardNext" class="btn btn-primary">Next</button>
-                <button id="wizardCreate" class="btn btn-primary hidden">Create Campaign</button>
+                <!-- Step 4: Campaign Limits & Launch -->
+                <div class="wizard-step" data-step="4">
+                    <h3>Campaign Settings</h3>
+                    
+                    <div class="wizard-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Daily Connection Limit</label>
+                                <input type="number" name="dailyLimit" value="20" max="50" class="form-input">
+                                <small>Recommended: 15-25 per day</small>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Weekly Message Limit</label>
+                                <input type="number" name="weeklyLimit" value="100" max="200" class="form-input">
+                                <small>Recommended: 80-120 per week</small>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Campaign Status</label>
+                            <div class="status-selector">
+                                <label class="status-option">
+                                    <input type="radio" name="campaignStatus" value="draft" checked>
+                                    <span>Save as Draft</span>
+                                </label>
+                                <label class="status-option">
+                                    <input type="radio" name="campaignStatus" value="active">
+                                    <span>Launch Immediately</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="campaign-summary">
+                            <h4>Campaign Summary</h4>
+                            <div id="campaignSummary" class="summary-content">
+                                <!-- Summary will be populated here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wizard-actions">
+                <button id="wizardBack" class="btn-glass" style="display: none;">Back</button>
+                <button id="wizardNext" class="btn-primary">Next</button>
+                <button id="wizardCreate" class="btn-primary hidden">Create Campaign</button>
             </div>
         </div>
     </div>
 
-    <!-- Message Composer Modal -->
+    <!-- Profile Analysis Modal -->
+    <div id="profileAnalysisModal" class="modal hidden">
+        <div class="modal-backdrop" onclick="closeProfileAnalysis()"></div>
+        <div class="modal-content analysis-modal">
+            <button id="closeAnalysisModal" class="modal-close">&times;</button>
+            
+            <div class="analysis-header">
+                <h2>🧠 AI Profile Analysis</h2>
+                <div id="analysisProspectInfo" class="prospect-info">
+                    <!-- Prospect info will be loaded here -->
+                </div>
+            </div>
+
+            <div class="analysis-content">
+                <div class="analysis-loading hidden">
+                    <div class="analysis-spinner"></div>
+                    <p>Analyzing LinkedIn profile...</p>
+                </div>
+                
+                <div id="analysisResults" class="analysis-results hidden">
+                    <!-- Analysis results will be loaded here -->
+                </div>
+            </div>
+
+            <div class="analysis-actions">
+                <button id="generateMessageFromAnalysis" class="btn-primary">
+                    <span class="btn-icon">💬</span>
+                    Generate Message
+                </button>
+                <button class="btn-glass">
+                    <span class="btn-icon">📋</span>
+                    Copy Analysis
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Message Composer Modal -->
     <div id="messageComposerModal" class="modal hidden">
         <div class="modal-backdrop" onclick="closeMessageComposer()"></div>
-        <div class="modal-content modal-wide">
+        <div class="modal-content composer-modal">
             <button id="closeComposerModal" class="modal-close">&times;</button>
             
             <div class="composer-header">
-                <h2>AI Message Composer</h2>
+                <h2>🤖 AI Message Composer</h2>
                 <div id="prospectPreview" class="prospect-preview">
                     <!-- Prospect info will be loaded here -->
                 </div>
             </div>
 
-            <div class="composer-toolbar">
-                <button class="toolbar-btn active" data-type="connection">Connection</button>
-                <button class="toolbar-btn" data-type="follow_up">Follow-up</button>
-                <button class="toolbar-btn" data-type="demo">Demo</button>
-            </div>
-
             <div class="composer-content">
-                <textarea id="messageContent" rows="8" placeholder="AI will generate your personalized message..."></textarea>
+                <div class="composer-settings">
+                    <div class="setting-group">
+                        <label>Message Type</label>
+                        <div class="editor-toolbar">
+                            <button class="toolbar-btn active" data-type="connection">Connection</button>
+                            <button class="toolbar-btn" data-type="follow_up">Follow-up</button>
+                            <button class="toolbar-btn" data-type="thank_you">Thank You</button>
+                            <button class="toolbar-btn" data-type="meeting">Meeting Request</button>
+                        </div>
+                    </div>
+                    
+                    <div class="setting-group">
+                        <label>Personalization Level</label>
+                        <div class="personalization-slider">
+                            <input type="range" id="personalizationLevel" min="1" max="5" value="3">
+                            <div class="slider-labels">
+                                <span>Generic</span>
+                                <span>Hyper-Personal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-preview">
+                    <h4>Generated Message</h4>
+                    <textarea id="messageContent" rows="8" placeholder="AI will generate your personalized message..." class="message-textarea"></textarea>
+                    <div class="message-stats">
+                        <span id="charCount">0</span> characters
+                        <span id="estimatedResponse" class="response-prediction">Est. Response Rate: 35%</span>
+                    </div>
+                </div>
+                
+                <div class="editor-actions">
+                    <button id="regenerateMessage" class="btn-glass">
+                        <span class="btn-icon">🔄</span>
+                        Regenerate
+                    </button>
+                    <button id="improveMessage" class="btn-glass">
+                        <span class="btn-icon">✨</span>
+                        Improve
+                    </button>
+                    <button id="sendMessage" class="btn-primary">
+                        <span class="btn-icon">✉</span>
+                        Send Message
+                    </button>
+                    <button id="scheduleMessage" class="btn-glass">
+                        <span class="btn-icon">⏰</span>
+                        Schedule
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bulk Actions Modal -->
+    <div id="bulkActionsModal" class="modal hidden">
+        <div class="modal-backdrop" onclick="closeBulkActions()"></div>
+        <div class="modal-content bulk-modal">
+            <button id="closeBulkModal" class="modal-close">&times;</button>
+            
+            <div class="bulk-header">
+                <h2>Bulk Actions</h2>
+                <p>Perform actions on multiple prospects</p>
             </div>
 
-            <div class="composer-footer">
-                <button id="regenerateMessage" class="btn btn-secondary">
-                    <span class="btn-icon">🔄</span>
-                    Regenerate
-                </button>
-                <button id="sendMessage" class="btn btn-primary">
-                    <span class="btn-icon">✉</span>
-                    Send Message
-                </button>
+            <div class="bulk-content">
+                <div class="bulk-stats">
+                    <div class="stat">
+                        <strong id="selectedCount">0</strong>
+                        <span>Selected</span>
+                    </div>
+                    <div class="stat">
+                        <strong id="estimatedTime">0</strong>
+                        <span>Est. Minutes</span>
+                    </div>
+                </div>
+
+                <div class="bulk-actions">
+                    <button class="bulk-action-btn" data-action="analyze">
+                        <span class="btn-icon">🧠</span>
+                        <div class="action-info">
+                            <strong>Analyze Profiles</strong>
+                            <p>Run AI analysis on selected prospects</p>
+                        </div>
+                    </button>
+                    
+                    <button class="bulk-action-btn" data-action="message">
+                        <span class="btn-icon">💬</span>
+                        <div class="action-info">
+                            <strong>Send Messages</strong>
+                            <p>Generate and send personalized messages</p>
+                        </div>
+                    </button>
+                    
+                    <button class="bulk-action-btn" data-action="sequence">
+                        <span class="btn-icon">🔄</span>
+                        <div class="action-info">
+                            <strong>Add to Sequence</strong>
+                            <p>Enroll in automated follow-up sequence</p>
+                        </div>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
